@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HABIT — Resultados da busca" />
+  <title>HABIT — Busca</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html" aria-label="HABIT — Página inicial">HABIT</a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+      <nav class="site-nav" id="site-nav" role="navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="listagem.html">Páginas</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="assinar.html">Assinar</a>
+        <a href="admin-categorias.html" class="nav-admin">Admin</a>
+      </nav>
+      <div class="header-search" role="search">
+        <label for="search-input" class="sr-only">Buscar</label>
+        <input type="search" id="search-input" name="q" placeholder="Buscar..." value="trabalho remoto" />
+        <a href="busca.html" class="btn btn-outline btn-sm">Buscar</a>
+        <a href="entrar.html" class="btn btn-outline-neutral btn-sm">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-wrapper">
+      <div class="container">
+        <div class="content-card">
+          <h1 style="font-size: var(--text-2xl); font-weight: 800; margin-bottom: var(--space-xl);">
+            Resultados para: "trabalho remoto"
+          </h1>
+
+          <section aria-label="Resultados da busca">
+            <ol style="list-style: none; padding: 0;">
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 1"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 1: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 2"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 2: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 3"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 3: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 4"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 4: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 5"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 5: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 6"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 6: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 7"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 7: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="search-result">
+                  <span class="img-placeholder" role="img" aria-label="Imagem do resultado 8"></span>
+                  <div>
+                    <h2 class="search-result-title">Resultado 8: título de exemplo</h2>
+                    <p class="search-result-meta">Categoria • 31 Jul 2025</p>
+                  </div>
+                </article>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#">Instagram</a><a href="#">Work</a><a href="#">Bags</a><a href="#">Lamp</a><a href="#">Books</a>
+      </nav>
+      <p class="footer-copy">© 2025 Meu Site • <a href="#">Meu site</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    btn.addEventListener('click', () => { const o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+  </script>
+</body>
+</html>
