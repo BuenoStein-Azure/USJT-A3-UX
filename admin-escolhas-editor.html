@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="HABIT Admin — Usuários" />
-  <title>HABIT Admin — Usuários</title>
+  <meta name="description" content="HABIT Admin — Escolhas do Editor" />
+  <title>HABIT Admin — Escolhas do Editor</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -42,8 +42,8 @@
               <ul>
                 <li><a href="admin-categorias.html">Categorias</a></li>
                 <li><a href="admin-criar-post.html">Criar Post</a></li>
-                <li><a href="admin-escolhas-editor.html">Escolhas do Editor</a></li>
-                <li><a href="admin-usuarios.html" aria-current="page">Usuários</a></li>
+                <li><a href="admin-escolhas-editor.html" aria-current="page">Escolhas do Editor</a></li>
+                <li><a href="admin-usuarios.html">Usuários</a></li>
                 <li><a href="admin-fila-revisao.html">Fila de revisão</a></li>
                 <li><a href="admin-fila-comentarios.html">Fila de comentários</a></li>
               </ul>
@@ -70,51 +70,36 @@
                 </div>
               </div>
 
-              <!-- Painel Usuários -->
-              <section class="admin-panel" aria-labelledby="users-heading">
-                <h2 id="users-heading">Usuários</h2>
-                <label for="search-users" class="sr-only">Buscar usuários</label>
-                <input class="form-input" type="search" id="search-users" placeholder="Buscar..." aria-label="Buscar usuários" />
+              <!-- Painel Escolhas do Editor -->
+              <section class="admin-panel" aria-labelledby="editor-heading">
+                <h2 id="editor-heading">Escolhas do Editor</h2>
+                <label for="search-posts" class="sr-only">Buscar posts</label>
+                <input class="form-input" type="search" id="search-posts" placeholder="Buscar posts..." aria-label="Buscar posts" />
 
-                <table class="admin-table" aria-label="Lista de usuários">
+                <table class="admin-table" aria-label="Lista de posts escolhidos pelo editor">
                   <thead>
-                    <tr>
-                      <th scope="col">Usuário</th>
-                      <th scope="col">E-mail</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Ações</th>
-                    </tr>
+                    <tr><th scope="col">Post</th><th scope="col">Ações</th></tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Usuário #1</td>
-                      <td>email@teste.com</td>
-                      <td>Ativo</td>
-                      <td><button class="btn btn-outline btn-sm">Bloquear</button></td>
+                      <td>Post #1</td>
+                      <td><button class="btn btn-danger btn-sm">Remover</button></td>
                     </tr>
                     <tr>
-                      <td>Usuário #2</td>
-                      <td>email@teste.com</td>
-                      <td>Ativo</td>
-                      <td><button class="btn btn-outline btn-sm">Bloquear</button></td>
+                      <td>Post #2</td>
+                      <td><button class="btn btn-outline btn-sm">Agendar</button></td>
                     </tr>
                     <tr>
-                      <td>Usuário #3</td>
-                      <td>email@teste.com</td>
-                      <td>Bloqueado</td>
-                      <td><button class="btn btn-outline btn-sm">Desbloquear</button></td>
+                      <td>Post #3</td>
+                      <td><button class="btn btn-outline btn-sm">Agendar</button></td>
                     </tr>
                     <tr>
-                      <td>Usuário #4</td>
-                      <td>email@teste.com</td>
-                      <td>Ativo</td>
-                      <td><button class="btn btn-outline btn-sm">Bloquear</button></td>
+                      <td>Post #4</td>
+                      <td><button class="btn btn-danger btn-sm">Remover</button></td>
                     </tr>
                     <tr>
-                      <td>Usuário #5</td>
-                      <td>email@teste.com</td>
-                      <td>Ativo</td>
-                      <td><button class="btn btn-outline btn-sm">Bloquear</button></td>
+                      <td>Post #5</td>
+                      <td><button class="btn btn-outline btn-sm">Agendar</button></td>
                     </tr>
                   </tbody>
                 </table>
